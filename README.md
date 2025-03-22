@@ -1,6 +1,6 @@
 # Implementation-of-Computational-Methods
 ## Description
-During this Evidence, I have been using the language “Quenya,” which is an elvish language that is part of the branch ‘Aman.’ Quenya was typically written with the Tengwar of Fëanor, a writing structure that nowadays resembles Arabic or Hindi traces in their words. There is information of two different dialects coming for Quenya, which are Valinorean Quenya and Vanyarin Quenya; spoken by two different clans of the Aman, the Noldor and the Vanyar. It has a Latin-like phonology, also having the same 5 vowels that we have in most Latin languages nowadays. Even though it can give an idea of most Romance languages, it is more influenced by Finnish; some of the language rules are presented in the Elvish structure. The word Quenya means “belonging to the Quendi”, however, the meaning does not delimit the language to just be spoken in certain places. 
+During this Evidence, I have been using the language “Quenya,” which is an elvish language that is part of the branch ‘Aman.’ Quenya was typically written with the Tengwar of Fëanor, a writing structure that nowadays resembles Arabic or Hindi traces in their words. There is information of two different dialects coming for Quenya, which are Valinorean Quenya and Vanyarin Quenya; spoken by two different clans of the Aman, the Noldor and the Vanyar. It has a Latin-like phonology, also having the same 5 vowels that we have in most Latin languages nowadays. Even though it can give an idea of most Romance languages, it is more influenced by Finnish; some of the language rules are presented in the Elvish structure. The word Quenya means “belonging to the Quendi”, however, the meaning does not delimit the language to just be spoken in certain places.  (Lambenor, n.d.)
 
 The objective is to create a program that only recognizes the words that have been assigned to me with Quenya. The words are:
 Eldarin
@@ -11,7 +11,7 @@ Elenion
 Elenya
 Emyn
 
-For the automata, I have been using a DFA (Deterministic Finite Automata), which is more rigid because it only transitions to one state, only one. It doesn't allow any null transitions, all of the transitions must be defined. Used this one to have a more exact model, and avoid having something confusing.
+For the automata, I have been using a DFA (Deterministic Finite Automata), which is more rigid because it only transitions to one state, only one. It doesn't allow any null transitions, all of the transitions must be defined. Used this one to have a more exact model, and avoid having something confusing. (GeeksforGeeks, n.d.)
 
 ## Model of Solution
 The automata generated ended up being this one:
