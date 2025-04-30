@@ -15,7 +15,7 @@ def run_test(test_num, input_str, expected):
     else:
         print(f"{test_num}. Failed, the word is not part of the list")
 
-# Running tests with numbers
+# Running tests
 run_test(1, "Eldarin", "Eldarin")
 run_test(2, "Elear", "Elear")
 run_test(3, "Elenion", "Elenion")
