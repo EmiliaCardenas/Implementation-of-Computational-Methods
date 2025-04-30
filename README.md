@@ -29,7 +29,7 @@ Elenya: q0 -> q1 -> q2 ->q8 -> q12 -> q16 -> q17
 Emyn: q0 -> q1 -> q11 -> q6 -> q7
 
 ## Implementation
-For my lexical analysis and used the regular expressión in the file regexp.py. In the file, if you give them the words of the list it should return a yes, but if the word is slightly different it should be a no.
+For my lexical analysis and used the regular expressión in the file *regexp.py*. In the file, if you give them the words of the list it should return a yes, but if the word is slightly different it should be a no.
 
 Elear -> Yes
 Eleni -> Yes
@@ -52,6 +52,7 @@ And using Regex101.com I checked if it worked or not.
 The file tests_regexp.py has all the cases tested for regular expressions. It includes 20 tests, of which only 7 are valid, and will pass. If the word entered in the py file is incorrect, the test will not appear.
 
 ## Prolog
+To run a proper prolog, use *prolog.pl* and the test with *test_prolog.pl*.
 I also tried to do it in Prolog. Using an array, and searching letter by letter to see if it fits or not. Searching first with the head, and it continues, going for the tail until the word is complete.
 
 % Valid words
