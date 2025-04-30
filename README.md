@@ -48,9 +48,6 @@ And using Regex101.com I checked if it worked or not.
 
 ![Regex](Regex.png)
 
-## Tests
-The file tests_regexp.py has all the cases tested for regular expressions. It includes 20 tests, of which only 7 are valid, and will pass. If the word entered in the py file is incorrect, the test will not appear.
-
 ## Prolog
 To run a proper prolog, use *prolog.pl* and the test with *test_prolog.pl*.
 I also tried to do it in Prolog. Using an array, and searching letter by letter to see if it fits or not. Searching first with the head, and it continues, going for the tail until the word is complete.
@@ -67,6 +64,8 @@ is_valid(W) :-
 search(H, [H|_]).  % If the head of the list is the searched word, it is valid.
 search(H, [_|T]) :- search(H, T). % Otherwise, continue searching in the tail.
 
+## Tests
+The file *tests_regexp.py* has all the cases tested for regular expressions. It includes 20 tests, of which only 7 are valid, and will pass. If the word entered in the py file is incorrect, the test will not appear.
 
 ## Analysis
 Starting with the time complexity, the main factor to use is the behavior of the function of the library re (for regular expressions), which is re.match(). Using a DFA with a linear runtime means that I didn’t use any kind of repetition with the symbols * or + in my regex. That leads to the conclusion that the time can be in **O(n)**.
