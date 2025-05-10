@@ -10,39 +10,42 @@ transition(q5, i, q6).
 transition(q6, n, q7).
 
 % elear
-transition(q0, e, q1).
-transition(q1, l, q2).
-transition(q2, e, q8).
-transition(q8, a, q9).
-transition(q9, r, q10).
+transition(q0, e, q10).
+transition(q10, l, q11).
+transition(q11, e, q12).
+transition(q12, a, q13).
+transition(q13, r, q14).
 
 % elen
-transition(q2, n, q12).
+transition(q0, e, q20).
+transition(q20, l, q21).
+transition(q21, e, q22).
+transition(q22, n, q23).
 
 % eleni
-transition(q12, i, q13).
+transition(q23, i, q24).
 
 % elenion
-transition(q13, o, q14).
-transition(q14, n, q15).
+transition(q24, o, q25).
+transition(q25, n, q26).
 
 % elenya
-transition(q12, y, q16).
-transition(q16, a, q17).
+transition(q23, y, q27).
+transition(q27, a, q28).
 
 % emyn
-transition(q0, e, q1).
-transition(q1, m, q11).
-transition(q11, y, q6).
-transition(q6, n, q7).
+transition(q0, e, q30).
+transition(q30, m, q31).
+transition(q31, y, q32).
+transition(q32, n, q7).
 
 % Final states
 final_state(q7).
-final_state(q10).
-final_state(q12).
-final_state(q13).
-final_state(q15).
-final_state(q17).
+final_state(q14).
+final_state(q23).
+final_state(q24).
+final_state(q26).
+final_state(q28).
 
 % Entry point
 recover_automaton(List) :-
