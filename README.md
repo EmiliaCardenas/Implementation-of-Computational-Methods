@@ -66,19 +66,12 @@ And using Regex101.com I checked if it worked or not.
 ## Prolog
 To run a proper prolog, use *prolog.pl* and the test with *test_prolog.pl*.
 The implementation goes for a series of *transitions*, which are the specific ways the transitions can occur, and also a set of the *final states* that can be reached. It uses 2 predicates that help to know if the word is correct of it is not, which are: *recover_automaton* and *automatonCheck*, using recursion on the last one to check the whole list of elements.
-I also tried to do it with a different method. Using an array and searching letter by letter to see if it fits or not. Searching first with the head, and it continues, going for the tail until the word is complete.
 
-% Valid words
-words(["eldarin", "elear", "elen", "eleni", "elenion", "elenya", "emyn"]).
-
-% Rule to check if a word is in the list
-is_valid(W) :-  
-    words(L),  
-    search(W, L).
-
-% Rule search for the word going to each letter of the word
-search(H, [H|_]).  % If the head of the list is the searched word, it is valid.
-search(H, [_|T]) :- search(H, T). % Otherwise, continue searching in the tail.
+```
+automatonCheck([Symbol | Rest], State) :-
+    transition(State, Symbol, NextState),
+    automatonCheck(Rest, NextState).
+```
 
 ## Tests
 The file *tests_regexp.py* has all the cases tested for regular expressions. It includes 20 tests, of which only 7 are valid, and will pass. If the word entered in the py file is incorrect, the test will not appear.
